@@ -7,14 +7,14 @@
 	<name>Shopping Cart</name>
 	<description>A Shopping Cart Project in Java by Bitter Code</description>
 
-        <properties>
-<docker.image.prefix>kammana</docker.image.prefix>
-<sonar.host.url>http://13.235.51.45:9000/</sonar.host.url>
-<java.version>11</java.version>
-<maven.compiler.source>${java.version}</maven.compiler.source>
-<maven.compiler.target>${java.version}</maven.compiler.target>
+     <properties>
+         <docker.image.prefix>kammana</docker.image.prefix>
+         <sonar.host.url>http://13.235.51.45:9000/</sonar.host.url>
+         <java.version>11</java.version>
+         <maven.compiler.source>${java.version}</maven.compiler.source> 
+         <maven.compiler.target>${java.version}</maven.compiler.target>
 </properties>
-	  <dependencies>
+	<dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -33,10 +33,10 @@
 			</resource>
 		</resources>
 		<plugins>
-			<plugin>
-                  <groupId>org.codehaus.mojo</groupId>
-                  <artifactId>sonar-maven-plugin</artifactId>
-                  <version>3.0.2</version>
+		   <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>sonar-maven-plugin</artifactId>
+                         <version>3.0.2</version>
                 </plugin>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
